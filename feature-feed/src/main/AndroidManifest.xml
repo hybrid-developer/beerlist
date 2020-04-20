@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zavaitar.feature.feed">
+
+    <application>
+        <activity android:name=".presentation.FeedActivity"></activity>
+    </application>
+
+</manifest>

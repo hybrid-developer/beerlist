@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/feed_navigation_graph"
+    app:startDestination="@id/feedFragment">
+
+    <activity
+        android:id="@+id/feedActivity"
+        android:name="com.zavaitar.feature.feed.presentation.FeedActivity"
+        android:label="FeedActivity" />
+    <fragment
+        android:id="@+id/feedFragment"
+        android:name="com.zavaitar.feature.feed.presentation.FeedFragment"
+        android:label="FeedFragment" />
+    <fragment
+        android:id="@+id/feedDetailsFragment"
+        android:name="com.zavaitar.feature.feed.presentation.FeedDetailsFragment"
+        android:label="FeedDetailsFragment" />
+</navigation>

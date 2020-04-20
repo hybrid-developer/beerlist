@@ -1,0 +1,8 @@
+include ':app',
+        ':core-test-rxutils',
+        ':core-ui',
+        ':core-network',
+        ':core-viewmodel',
+        ':feature-startup',
+        ':feature-feed',
+rootProject.name='InterviewProject'

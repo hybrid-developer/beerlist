@@ -1,0 +1,66 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion versions.compileSdkVersion
+
+    defaultConfig {
+        minSdkVersion versions.minSdkVersion
+        targetSdkVersion versions.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    lintOptions {
+        warningsAsErrors true
+        lintConfig file("lint.xml")
+    }
+}
+
+dependencies {
+
+    /* kotlin */
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    testImplementation "org.jetbrains.kotlin:kotlin-test:$kotlin_version"
+
+   // implementation("com.squareup.moshi:moshi:${versions.moshi}")
+    implementation 'com.squareup.retrofit2:converter-gson:2.6.0'
+    implementation 'com.google.code.gson:gson:2.8.5'
+
+    /* dagger2 */
+    implementation "com.google.dagger:dagger:${versions.dagger}"
+    implementation "com.google.dagger:dagger-android:${versions.dagger}"
+    implementation "com.google.dagger:dagger-android-support:${versions.dagger}"
+    kapt "com.google.dagger:dagger-compiler:${versions.dagger}"
+    kapt "com.google.dagger:dagger-android-processor:${versions.dagger}"
+
+    /* okhttp */
+    implementation "com.squareup.okhttp3:logging-interceptor:${versions.okhttp}"
+
+    /* retrofit */
+    implementation "com.squareup.retrofit2:retrofit:${versions.retrofit}"
+    implementation "com.squareup.retrofit2:converter-moshi:${versions.retrofit}"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:${versions.retrofit}"
+
+    /* junit */
+    testImplementation "junit:junit:${versions.junit}"
+    testImplementation "org.junit.platform:junit-platform-runner:${versions.junitPlatformRunner}"
+
+    /* spek */
+    testImplementation "org.jetbrains.spek:spek-api:${versions.spekApi}"
+    testImplementation "org.jetbrains.spek:spek-junit-platform-engine:${versions.spekJunitPlatformEngine}"
+
+    /* mockito */
+    testImplementation "com.nhaarman:mockito-kotlin:${versions.mockitoKotlin}"
+
+    /* assertj */
+    testImplementation "org.assertj:assertj-core:${versions.assertj}"
+}

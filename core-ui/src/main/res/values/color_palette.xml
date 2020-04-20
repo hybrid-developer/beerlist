@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="putty">#C1B8B2</color>
+
+    <color name="lakeBlue">#5894BC</color>
+    <color name="winterBlue">#9BE7FF</color>
+
+    <color name="eggshell">#F2E6DE</color>
+    <color name="eggshell_87">#DEF2E6DE</color>
+    <color name="eggshell_54">#8AF2E6DE</color>
+
+    <color name="midGrey">#8AABADAF</color>
+    <color name="lightBlack">#393D42</color>
+
+    <color name="lightGray">#F1F1F1</color>
+    <color name="lightGray_87">#F1F1F1</color>
+    <color name="lightGray_54">#8AF1F1F1</color>
+    <color name="darkGrey">#757575</color>
+    <color name="bglightGrey">#F4F4F4</color>
+
+    <color name="cream">#FAFAFA</color>
+    <color name="white">#FFFFFF</color>
+    <color name="bgWhite">#FBFBFB</color>
+
+    <color name="onyx">#333C37</color>
+    <color name="onyx_87">#DE333C37</color>
+    <color name="onyx_54">#8A333C37</color>
+
+    <color name="red">#FF0000</color>
+
+    <color name="cpBrandBackground">#FF42145F</color>
+    <color name="cpBrandBackgroundDark">#8842145F</color>
+    <color name="cpAccent">@color/white</color>
+    <color name="cpBackgroundDarkTransparent">#E642145F</color>
+    <color name="cpNotificationDot">#CF223F</color>
+</resources>

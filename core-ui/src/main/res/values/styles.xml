@@ -1,0 +1,94 @@
+<resources>
+
+    <style name="Theme.TwitterFeed" parent="Theme.AppCompat.NoActionBar">
+        <!-- General theme colors -->
+        <item name="colorPrimary">@color/cpColorPrimary</item>
+        <item name="colorPrimaryDark">@color/cpColorPrimaryDark</item>
+        <item name="colorAccent">@color/cpColorAccent</item>
+        <item name="android:colorBackground">@color/cpBackground</item>
+        <item name="android:colorForeground">@color/cpForeground</item>
+        <!-- Text Appearance styles -->
+        <item name="android:fontFamily">@font/rn_house_sans_regular</item>
+        <item name="android:textViewStyle">@style/TextViewStyle.Condensed</item>
+        <item name="android:textColorPrimary">@color/cpTextColorPrimary</item>
+        <item name="android:textColorSecondary">@color/cpTextColorSecondary</item>
+        <item name="android:textColorTertiary">@color/cpTextColorTertiary</item>
+        <item name="android:textColorLink">@color/cpTextColorLink</item>
+        <item name="android:textColorHint">@color/cpTextColorTertiary</item>
+        <item name="android:textColorPrimaryInverse">@color/cpTextColorPrimaryInverse</item>
+        <item name="android:textColorSecondaryInverse">@color/cpTextColorSecondaryInverse</item>
+        <item name="android:textColorTertiaryInverse">@color/cpTextColorTertiaryInverse</item>
+        <item name="android:textColorLinkInverse">@color/cpTextColorLinkInverse</item>
+        <item name="android:textColorHintInverse">@color/cpTextColorTertiaryInverse</item>
+        <item name="colorError">@color/red</item>
+        <item name="android:buttonStyle">@style/Widget.CurrencyPay.Button</item>
+
+        <item name="android:windowEnterAnimation">@null</item>
+        <item name="android:windowExitAnimation">@null</item>
+
+        <item name="colorControlActivated">#AD1982</item>
+    </style>
+
+    <style name="Theme.CurrencyPay.Dialog" parent="Theme.AppCompat.Light.Dialog.MinWidth" />
+
+    <style name="TextViewStyle.Condensed" parent="android:Widget.TextView">
+        <item name="android:fontFamily">sans-serif-condensed</item>
+    </style>
+
+    <style name="TextAppearance.CurrencyPay.Title" parent="TextAppearance.AppCompat.Title">
+        <item name="android:fontFamily">@font/rn_house_sans_regular</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="TextAppearance.CurrencyPay.Title.Bold" parent="TextAppearance.CurrencyPay.Title">
+        <item name="android:fontFamily">@font/rn_house_sans_bold</item>
+    </style>
+
+    <style name="TextAppearance.CurrencyPay.Body1" parent="TextAppearance.AppCompat.Body1">
+        <item name="android:fontFamily">@font/rn_house_sans_regular</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:lineSpacingExtra">8sp</item>
+    </style>
+
+    <style name="TextAppearance.CurrencyPay.Body1.White">
+        <item name="android:textColor">@color/cpTextColorPrimary</item>
+    </style>
+
+    <style name="TextAppearance.CurrencyPay.Title.White">
+        <item name="android:textColor">@color/cpTextColorPrimary</item>
+    </style>
+
+    <style name="TextAppearance.CurrencyPay.Title.Large.Bold.White"
+        parent="TextAppearance.CurrencyPay.Title.Bold">
+        <item name="android:textColor">@color/cpTextColorPrimary</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+
+    <style name="Widget.CurrencyPay.Button" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:fontFamily">@font/rn_house_sans_regular</item>
+        <item name="android:background">@drawable/button_selector</item>
+        <item name="android:textColor">@color/cpTextColorPrimary</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:paddingLeft">24dp</item>
+        <item name="android:paddingRight">24dp</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingBottom">16dp</item>
+        <item name="android:minHeight">64dp</item>
+        <item name="cornerRadius">2dp</item>
+    </style>
+
+    <style name="Widget.CurrencyPay.ButtonTransparent" parent="Widget.CurrencyPay.Button">
+        <item name="backgroundTint">@android:color/transparent</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="strokeColor">@color/cpTextColorPrimary</item>
+    </style>
+
+    <style name="Widget.CurrencyPay.Button.Large.Bold" parent="Widget.CurrencyPay.Button">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ToolbarTheme" parent="ThemeOverlay.AppCompat">
+        <item name="android:fontFamily">@font/rn_house_sans_regular</item>
+    </style>
+</resources>

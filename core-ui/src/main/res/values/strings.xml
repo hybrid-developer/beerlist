@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">core-ui</string>
+    <string name="continue_title">Continue</string>
+    <string name="next">Next</string>
+    <string name="retry">Retry</string>
+    <string name="error_retry_body">Please click below to retry</string>
+    <string name="account_locked">Your account has been locked</string>
+    <string name="error_title">Sorry, there was a problem</string>
+</resources>

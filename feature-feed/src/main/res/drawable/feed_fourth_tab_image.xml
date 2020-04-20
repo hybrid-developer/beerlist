@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" android:viewportWidth="24"
+    android:viewportHeight="24" android:width="24dp" android:height="24dp">
+    <group android:name="Layer_1-2">
+        <path android:name="cls-1" android:fillColor="#3B3F44"
+            android:pathData="M23.6 12.28h -0.84V7.44a 0.67 0.67 0 0 0 -0.67 -0.67h-2V 0.67A 0.67 0.67 0 0 0 19.39 0H4.06A4.06 4.06 0 0 0 0 4.06H0V20.21a4.06 4.06 0 0 0 4.06 4.06h18a 0.67 0.67 0 0 0 0.67 -0.67V18.68h 0.84a 0.67 0.67 0 0 0 0.67 -0.67V13A 0.67 0.67 0 0 0 23.6 12.28ZM4.06 1.35H18.71v2H4.25a 0.67 0.67 0 0 0 0 1.35H18.71v2H4.06a2.71 2.71 0 0 1 0-5.42ZM21.41 22.92H4.06a2.71 2.71 0 0 1-2.71-2.71V16.12H3.54a 0.67 0.67 0 0 0 0-1.35H1.35V12.42H4.79a 0.67 0.67 0 0 0 0-1.35H1.35v-4a4 4 0 0 0 2.71 1H21.4v4.16H19.72a3.21 3.21 0 1 0 0 6.41H21.4v4.23Zm1.51-5.58h-3.2a1.85 1.85 0 0 1 0-3.71h3.2Z" />
+        <path android:name="cls-1" android:fillColor="#3B3F44"
+            android:pathData="M18.71 15.48a 0.67 0.67 0 0 0 0.67 0.67H20a 0.67 0.67 0 0 0 0-1.35h -0.62A 0.68 0.68 0 0 0 18.71 15.48Z" />
+        <path android:name="cls-1" android:fillColor="#3B3F44"
+            android:pathData="M 7.2,11.04 Q 7.58,11.04 7.58,11.42 L 7.58,11.66 Q 7.58,12.04 7.2,12.04 L 6.96,12.04 Q 6.58,12.04 6.58,11.66 L 6.58,11.42 Q 6.58,11.04 6.96,11.04 z" />
+        <path android:name="cls-1" android:fillColor="#3B3F44"
+            android:pathData="M 9.69,11.04 Q 10.08,11.04 10.08,11.43 L 10.08,11.65 Q 10.08,12.04 9.69,12.04 L 9.47,12.04 Q 9.08,12.04 9.08,11.65 L 9.08,11.43 Q 9.08,11.04 9.47,11.04 z" />
+    </group>
+</vector>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="space_xxxxlarge">56dp</dimen>
+    <dimen name="space_xxxlarge">48dp</dimen>
+    <dimen name="space_xxlarge">32dp</dimen>
+    <dimen name="space_xlarge">24dp</dimen>
+    <dimen name="space_large">20dp</dimen>
+    <dimen name="space_medium">16dp</dimen>
+    <dimen name="space_small">8dp</dimen>
+    <dimen name="space_extra_small">4dp</dimen>
+
+    <dimen name="logo_top_margin">76dp</dimen>
+    <dimen name="progress_radius">64dp</dimen>
+
+    <dimen name="image_resetpasscode_top_margin">120dp</dimen>
+
+    <dimen name="image_warning_padding">20dp</dimen>
+</resources>

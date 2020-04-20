@@ -1,0 +1,20 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="109"
+    android:viewportHeight="109">
+    <path
+        android:name="tick"
+        android:fillColor="#FFFFFF"
+        android:fillType="evenOdd"
+        android:pathData="M47.501,60.061L36.155,51.169L31.146,55.211L50.748,75.155C54.123,66.509 64.809,49.611 77.854,37.608L76.653,34.833C62.442,43.547 52.132,54.544 47.501,60.061Z"
+        android:strokeWidth="1"
+        android:strokeColor="#00000000" />
+    <path
+        android:name="circle"
+        android:fillColor="#00000000"
+        android:fillType="evenOdd"
+        android:pathData="M54.5,54.5m-52.5,0a52.5,52.5 0,1 1,105 0a52.5,52.5 0,1 1,-105 0"
+        android:strokeWidth="4"
+        android:strokeColor="#FFFFFF" />
+</vector>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_navigation"
+    app:startDestination="@id/startupFragment">
+
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.zavaitar.interviewproject.MainActivity"
+        android:label="MainActivity"
+        tools:layout="@layout/activity_main" />
+    <fragment
+        android:id="@+id/startupFragment"
+        android:name="com.zavaitar.feature.startup.presentation.StartupFragment"
+        android:label="SplashFragment"
+        tools:layout="@layout/startup_fragment"/>
+    <activity
+        android:id="@+id/FeedActivity"
+        android:name="com.zavaitar.feature.feed.presentation.FeedActivity"
+        android:label="FeedActivity"
+        tools:layout="@layout/feed_activity" />
+    <fragment
+        android:id="@+id/FeedFragment"
+        android:name="com.zavaitar.feature.feed.presentation.FeedFragment"
+        android:label="FeedFragment"
+        tools:layout="@layout/feed_list_item"/>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.zavaitar.feature.feed.presentation.FeedActivity"
+        android:label="Feed Activity"
+        tools:layout="@layout/feed_list_item"/>
+    <activity
+        android:id="@+id/startupActivity"
+        android:name="com.zavaitar.feature.startup.presentation.StartupActivity"
+        android:label="StartupActivity" />
+</navigation>

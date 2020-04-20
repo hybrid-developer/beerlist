@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CpTheme">
+        <attr name="actionButtonNormalColor" format="color"/>
+        <attr name="actionButtonPressedColor" format="color"/>
+        <attr name="actionButtonDisabledColor" format="color"/>
+
+        <attr name="altButtonNormalColor" format="color"/>
+        <attr name="altButtonPressedColor" format="color"/>
+        <attr name="altButtonDisabledColor" format="color"/>
+
+        <attr name="outlineButtonColor" format="color"/>
+        <attr name="outlineButtonPressedColor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="CustomInfoView">
+        <attr name="customTitle" format="reference" />
+        <attr name="customSubtitle" format="reference" />
+        <attr name="customAction" format="reference" />
+        <attr name="customSecondaryAction" format="reference" />
+        <attr name="customImage" format="reference" />
+        <attr name="customImageHeight" format="dimension" />
+        <attr name="customImageWidth" format="dimension" />
+        <attr name="customImagePaddingHorizontal" format="dimension" />
+        <attr name="customImagePaddingVertical" format="dimension" />
+    </declare-styleable>
+</resources>

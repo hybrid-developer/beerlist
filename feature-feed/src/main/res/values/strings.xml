@@ -1,0 +1,27 @@
+<resources>
+    <string name="feed_network_error_message">Opps !! Seems like No Network Available !!</string>
+    <string name="feed_data_not_received">hmmm !! We got a runner!! Wait till I catch !</string>
+    <string name="feed_other_error">We are having a break. Will be back shortly !!</string>
+    <string name="feed_retryButton_text">Try Again</string>
+
+
+    <!-- Feedback Details Screen -->
+
+    <string name="feed_verified_background_label">Verified Background</string>
+    <string name="feed_layer_details_title">Lawyer details</string>
+    <string name="feed_verified_background_text">Verified Background</string>
+    <string name="feed_trail_period_text">1st FREE CONSULTATION Available</string>
+
+    <string name="feed_rating_text">Rating</string>
+    <string name="feed_reviews_text">Reviews</string>
+    <string name="feed_ranking_text">Ranking</string>
+
+    <string name="feed_member_since_text">Member Since: %1s</string>
+    <string name="feed_response_time_text">Avg. Response Time: %1s</string>
+    <string name="feed_day_suffix_text">Avg. Response Time</string>
+
+    <string name="feed_description_label_text">Description</string>
+    <string name="feed_another_info_label_text">Another Info</string>
+
+    <string name="feed_schedule_lawyer_button_text">SCHEDULE LAWYER</string>
+</resources>

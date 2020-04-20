@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ic_launcher_background">#42145F</color>
+    <!-- CP Theme -->
+    <color name="cpColorPrimary">@color/cpBrandBackground</color>
+    <color name="cpColorPrimaryDark">@color/cpBrandBackgroundDark</color>
+    <color name="cpColorAccent">@color/cpAccent</color>
+    <color name="cpBackground">@color/cpBrandBackground</color>
+    <color name="cpForeground">@color/putty</color>
+
+    <color name="cpTextColorPrimary">@color/eggshell</color>
+    <color name="cpTextColorSecondary">@color/eggshell_87</color>
+    <color name="cpTextColorTertiary">@color/eggshell_54</color>
+    <color name="cpTextColorLink">@color/winterBlue</color>
+    <color name="cpTextColorPrimaryInverse">@color/lightGray</color>
+    <color name="cpTextColorSecondaryInverse">@color/lightGray_87</color>
+    <color name="cpTextColorTertiaryInverse">@color/lightGray_54</color>
+    <color name="cpTextColorLinkInverse">@color/lakeBlue</color>
+
+    <color name="cpLightTextColorPrimary">@color/onyx</color>
+    <color name="cpLightTextColorSecondary">@color/onyx_87</color>
+    <color name="cpLightTextColorTertiary">@color/onyx_54</color>
+    <color name="cpLightTextColorLink">@color/lakeBlue</color>
+    <color name="cpLightTextColorPrimaryInverse">@color/lightGray</color>
+    <color name="cpLightTextColorSecondaryInverse">@color/lightGray_87</color>
+    <color name="cpLightTextColorTertiaryInverse">@color/lightGray_54</color>
+    <color name="cpLightTextColorLinkInverse">@color/winterBlue</color>
+</resources>

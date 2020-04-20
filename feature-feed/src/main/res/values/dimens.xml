@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="feed_retryNetworkButtonHeight">50dp</dimen>
+    <dimen name="feed_retryNetworkButtonWidth">150dp</dimen>
+    <dimen name="feed_errorMessageTextViewHeight">50dp</dimen>
+    <dimen name="feed_feedListItemHeight">100dp</dimen>
+    <dimen name="feed_feedDetailsLawyerTopLayerHeight">150dp</dimen>
+    <dimen name="feed_feedDetailsLawyerMiddleLayerHeight">100dp</dimen>
+    <dimen name="feed_feedListItemCornerRadius">5dp</dimen>
+    <dimen name="feed_feedListItemCardElevation">5dp</dimen>
+    <dimen name="feed_twitterImageIconSize">100dp</dimen>
+</resources>

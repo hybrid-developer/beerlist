@@ -1,0 +1,100 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion versions.compileSdkVersion
+
+    resourcePrefix 'feed_'
+
+    defaultConfig {
+        minSdkVersion versions.minSdkVersion
+        targetSdkVersion versions.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    lintOptions {
+        warningsAsErrors true
+        lintConfig file("lint.xml")
+    }
+
+    androidExtensions {
+        experimental = true
+    }
+}
+
+dependencies {
+
+    implementation project(':core-viewmodel')
+    implementation project(':core-ui')
+    implementation project(':core-network')
+
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0'
+    implementation "uk.co.chrisjenx:calligraphy:2.3.0"
+
+    implementation "com.google.android.material:material:${versions.androidMaterial}"
+    implementation "androidx.coordinatorlayout:coordinatorlayout:1.1.0"
+    testImplementation project(':core-test-rxutils')
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    testImplementation "org.jetbrains.kotlin:kotlin-test:$kotlin_version"
+
+    implementation "androidx.arch.core:core-runtime:${versions.archRuntime}"
+    implementation "androidx.lifecycle:lifecycle-extensions:${versions.archLifecycleExtensions}"
+    implementation("android.arch.navigation:navigation-ui-ktx:${versions.archNavigation}") {
+        exclude group: 'org.jetbrains.kotlin', module: 'kotlin-stdlib'
+    }
+    implementation("android.arch.navigation:navigation-fragment-ktx:${versions.archNavigation}") {
+        exclude group: 'org.jetbrains.kotlin', module: 'kotlin-stdlib'
+    }
+    implementation "androidx.constraintlayout:constraintlayout:${versions.constraintlayout}"
+    implementation "com.google.android.gms:play-services-vision:${versions.playServicesVision}"
+
+    /* rxjava2 */
+    implementation "io.reactivex.rxjava2:rxjava:${versions.rxJava}"
+    implementation "io.reactivex.rxjava2:rxandroid:${versions.rxAndroid}"
+    implementation("com.jakewharton.rxbinding2:rxbinding:${versions.rxBinding}") {
+        exclude group: 'io.reactivex.rxjava2', module: 'rxandroid'
+    }
+
+    /* retrofit */
+    implementation "com.squareup.retrofit2:retrofit:${versions.retrofit}"
+
+    /* glide */
+    implementation "com.github.bumptech.glide:glide:4.3.1"
+    annotationProcessor "com.github.bumptech.glide:compiler:4.3.1"
+
+    /* dagger2 */
+    implementation "com.google.dagger:dagger:${versions.dagger}"
+    implementation "com.google.dagger:dagger-android:${versions.dagger}"
+    implementation "com.google.dagger:dagger-android-support:${versions.dagger}"
+    kapt "com.google.dagger:dagger-compiler:${versions.dagger}"
+    kapt "com.google.dagger:dagger-android-processor:${versions.dagger}"
+
+    /* junit */
+    testImplementation "junit:junit:${versions.junit}"
+    testImplementation "org.junit.platform:junit-platform-runner:${versions.junitPlatformRunner}"
+
+    /* assertj */
+    testImplementation "org.assertj:assertj-core:${versions.assertj}"
+
+    /* testing */
+    testImplementation "com.nhaarman.mockitokotlin2:mockito-kotlin:${versions.mockitoKotlin2}"
+    testImplementation "org.jetbrains.kotlinx:kotlinx-coroutines-test:${versions.coroutines}"
+    testImplementation "androidx.arch.core:core-testing:${versions.archRuntime}"
+}

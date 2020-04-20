@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bglightGrey">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/feedToolbar"
+        android:layout_width="0dp"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/white"
+        android:theme="@style/ToolbarTheme"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/twitterFeedRecyclerView"
+        android:name="com.zavaitar.feature.feed.FeedFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/space_small"
+        android:layout_marginEnd="@dimen/space_small"
+        app:layoutManager="LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/feedToolbar"
+        tools:context=".presentation.FeedFragment"
+        tools:listitem="@layout/feed_list_item" />
+
+    <include
+        android:id="@+id/feedLoadingProgressBar"
+        layout="@layout/progress_bar"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/errorMessageLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/feedToolbar"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible">
+
+        <TextView
+            android:id="@+id/errorMessageTextView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/feed_errorMessageTextViewHeight"
+            android:gravity="center"
+            tools:text="Error Message goes here" />
+
+        <Button
+            android:id="@+id/retryNetworkCallButton"
+            android:layout_width="@dimen/feed_retryNetworkButtonWidth"
+            android:layout_height="@dimen/feed_retryNetworkButtonHeight"
+            android:gravity="center"
+            android:text="@string/feed_retryButton_text" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+

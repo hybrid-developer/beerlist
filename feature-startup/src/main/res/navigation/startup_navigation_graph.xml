@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/feed_navigation_graph"
+    app:startDestination="@id/startupFragment">
+
+    <activity
+        android:id="@+id/startupActivity"
+        android:name="com.zavaitar.feature.startup.presentation.StartupActivity"
+        android:label="StartupActivity" />
+    <fragment
+        android:id="@+id/startupFragment"
+        android:name="com.zavaitar.feature.startup.presentation.StartupFragment"
+        android:label="StartupFragment" />
+</navigation>

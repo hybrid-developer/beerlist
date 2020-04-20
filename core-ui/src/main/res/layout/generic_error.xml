@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.natwestmarkets.currencypay.core.nw.ui.views.fullscreen.CustomInfoView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:visibility="gone"
+    app:customAction="@string/retry"
+    app:customImage="@drawable/error"
+    app:customImagePaddingHorizontal="@dimen/image_warning_padding"
+    app:customImagePaddingVertical="@dimen/image_warning_padding"
+    app:customSubtitle="@string/error_retry_body"
+    app:customTitle="@string/error_title"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
